@@ -20,7 +20,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
@@ -37,7 +37,7 @@ function Home() {
           )}
         </div>
       )}
-    </div>
+    </>
   );
 }
 
