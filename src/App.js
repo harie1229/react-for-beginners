@@ -4,10 +4,10 @@ import Detail from './routers/Detail';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/movie'>
+        <Route path={`/`} element={<Home />}></Route>
+        <Route path={`/movie`}>
           <Route path=':id' element={<Detail />}></Route>
         </Route>
       </Routes>
